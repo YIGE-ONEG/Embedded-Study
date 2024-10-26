@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"led_initial\startup_stm32f411xe.o"
+"led_initial\led.o"
+"led_initial\key.o"
+"led_initial\main.o"
+"led_initial\gpio.o"
+"led_initial\stm32f4xx_it.o"
+"led_initial\stm32f4xx_hal_msp.o"
+"led_initial\stm32f4xx_hal_tim.o"
+"led_initial\stm32f4xx_hal_tim_ex.o"
+"led_initial\stm32f4xx_hal_rcc.o"
+"led_initial\stm32f4xx_hal_rcc_ex.o"
+"led_initial\stm32f4xx_hal_flash.o"
+"led_initial\stm32f4xx_hal_flash_ex.o"
+"led_initial\stm32f4xx_hal_flash_ramfunc.o"
+"led_initial\stm32f4xx_hal_gpio.o"
+"led_initial\stm32f4xx_hal_dma_ex.o"
+"led_initial\stm32f4xx_hal_dma.o"
+"led_initial\stm32f4xx_hal_pwr.o"
+"led_initial\stm32f4xx_hal_pwr_ex.o"
+"led_initial\stm32f4xx_hal_cortex.o"
+"led_initial\stm32f4xx_hal.o"
+"led_initial\stm32f4xx_hal_exti.o"
+"led_initial\system_stm32f4xx.o"
+--strict --scatter "LED_Initial\LED_Initial.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LED_Initial.map" -o LED_Initial\LED_Initial.axf
